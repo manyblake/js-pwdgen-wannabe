@@ -1,10 +1,8 @@
-let firstName = prompt(`Inserisci il nome`);
-let surname = prompt(`Inserisci il cognome`);
-let favoriteColor = prompt(`Inserisci il tuo colore preferito`);
+const firstName = prompt(`Inserisci il nome`);
+const surname = prompt(`Inserisci il cognome`);
+const favoriteColor = prompt(`Inserisci il tuo colore preferito`);
 
-let pswdwannabe = document.getElementById(`printed-text`);
+const pswdwannabe = document.getElementById(`printed-text`);
 
 pswdwannabe.innerHTML =
-  firstName + surname + favoriteColor + Math.floor(Math.random() + 21);
-
-// console.log(firstName + surname + favoriteColor);
+  firstName + surname + favoriteColor + Math.floor(Math.random() * 99);
